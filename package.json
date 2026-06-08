@@ -2,15 +2,16 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/koryaga1999-lub/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/koryaga1999-lub/frontend-project-44/actions)",
-  "type" : "module",
+  "type": "module",
   "main": "index.js",
-    "bin": {
-    "brain-games": "bin/brain-games.js"
+  "bin": {
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js",
+     "brain-gcd": "bin/brain-gcd.js",
+     "brain-progression": "bin/brain-progression.js",
+      "brain-prime": "bin/brain-prime.js"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/koryaga1999-lub/frontend-project-44.git"
@@ -21,5 +22,19 @@
   "bugs": {
     "url": "https://github.com/koryaga1999-lub/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/koryaga1999-lub/frontend-project-44#readme"
+  "homepage": "https://github.com/koryaga1999-lub/frontend-project-44#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.4.1",
+    "global": "^4.4.0",
+    "globals": "^17.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  }
 }
