@@ -17,13 +17,13 @@ const calculate = (num1, num2, operator) => {
 
 const generateRound = () => {
   const operators = ['+', '-', '*'];
-  const num1 = Math.floor(Math.random() * 20) + 1; // Числа от 1 до 20
+  const num1 = Math.floor(Math.random() * 20) + 1;
   const num2 = Math.floor(Math.random() * 20) + 1;
   const operator = operators[Math.floor(Math.random() * operators.length)];
-
+  
   const question = `${num1} ${operator} ${num2}`;
   const correctAnswer = String(calculate(num1, num2, operator));
-
+  
   return [question, correctAnswer];
 };
 
